@@ -44,7 +44,7 @@ class myContentHandler(ContentHandler):
                 self.theContent = ""
             elif name == 'link':
                 line =  "<a href=" + self.theContent  + ">" + self.titulo + "</a></br>"
-                print line.encode('utf-8')
+                print line.encode("iso-8859-1")
                 self.inContent = False
                 self.theContent = ""
 
